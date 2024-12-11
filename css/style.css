@@ -220,11 +220,6 @@ input[type="submit"] {
 	background-size: 300% 100%;
 }
 
-input[type="submit"] {
-
-}
-
-
 h1,
 h2,
 h3,
@@ -300,13 +295,14 @@ img {
 	display: block;
 	border-radius: 10px;
 	padding: 28px;
-	border: 2px solid rgba(0, 0, 0, 0.2);
+	/*border: 2px solid rgba(0, 0, 0, 0.2);
 	background: var(--darker);
-	backdrop-filter: blur(5px);
+	backdrop-filter: blur(5px);*/
 }
 
 #gallery .plate>h3 {
 	text-align: left;
+	font-size: 48px;
 }
 
 h3 {
@@ -413,7 +409,7 @@ h3 {
 #sub_menu>li:last-child:hover {
 	background: var(--high_inactive);
 	color: var(--white);
-    box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+	box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 #sub_menu>li:last-child a:hover {
@@ -873,8 +869,9 @@ h3 {
 .button {
 	font-size: 16px;
 	font-weight: 600;
-	background: var(--high_inactive);
-	color: var(--primary);
+	background: var(--highlight);
+	background-size: 300% 100%;
+	color: var(--white);
 	border: 0;
 	margin: 20px auto 30px;
 	padding: 10px 10px;
@@ -889,19 +886,19 @@ h3 {
 }
 
 .button.btn-secondary {
-	background: var(--highlight_new);
-	color: var(--primary);
+	/*background: var(--highlight_new);
+	color: var(--primary);*/
 }
 
 .button.underline {
-	background: var(--highlight_new);
+	/*background: var(--highlight_new);
 	border: none;
-	color: var(--primary);
+	color: var(--primary);*/
 }
 
 .button.underline:hover {
-	background: var(--highlight);
-	border: none;
+	/*background: var(--highlight);
+	border: none;*/
 }
 
 .button {
@@ -957,8 +954,9 @@ form .row {
 }
 
 .button:hover {
-	background: var(--highlight);
-	color: var(--primary);
+	background-position: 100% 0;
+	color: var(--white);
+	box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 h3.game_title {
@@ -1539,6 +1537,12 @@ input::-webkit-inner-spin-button {
 	background-size: 300% 100%;
 }
 
+.login_page form .btn:hover,
+.login_page form .btn:focus,
+.login_page form .btn:active {
+	background-position: 100% 0%;
+}
+
 .contact_page .login_page .contact-right-ltpwr {
 	width: 100%;
 }
@@ -1559,7 +1563,7 @@ input::-webkit-inner-spin-button {
 	margin-left: auto;
 	margin-right: auto;
 	float: none;
-	color: var(--highlight);
+	color: var(--white);
 }
 
 .profile_page h3,
@@ -1620,7 +1624,7 @@ input::-webkit-inner-spin-button {
 
 .thx .contact-agileinfo .framed {
 	margin: auto;
-	background: rgb(29 31 37);
+	/*background: rgb(29 31 37);*/
 }
 
 .thx .contact-agileinfo .framed h3 {
@@ -1628,10 +1632,8 @@ input::-webkit-inner-spin-button {
 }
 
 .contact-agileinfo p {
-	color: var(--main-text);
+	color: var(--high_inactive);
 }
-
-.about-grid-right-ltpwr-agile img {}
 
 .link {
 	outline: none;
@@ -2355,7 +2357,7 @@ p.agileits {
 }
 
 .blog-text-ltpwrls h4 {
-	color: var(--high_inactive);
+	color: var(--main-text);
 	font-size: 35px;
 	text-align: left;
 	font-weight: 400;
@@ -2367,7 +2369,7 @@ p.agileits {
 }
 
 .blog-text-ltpwrls h4:hover {
-	color: var(--highlight);
+	color: var(--high_inactive);
 }
 
 .item_info {
@@ -2417,14 +2419,14 @@ p.agileits {
 }
 
 form .form-hint {
-	color: var(--secondary);
+	color: var(--main-text);
 	text-align: center;
 	display: block;
 }
 
 .form-hint2 {
 	font-size: 12px;
-	color: var(--secondary);
+	color: var(--main-text);
 	text-align: left;
 	display: block;
 	margin-bottom: 10px;
@@ -2592,10 +2594,8 @@ a.blog-read:hover {
 
 .contact-right-ltpwr input.text:focus,
 .contact-right-ltpwr textarea:focus {
-	border-color: #78d23d;
-	outline: 0;
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #bbfe0393;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #bbfe0393;
+	-webkit-box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+	box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 ::placeholder {
@@ -2881,13 +2881,18 @@ select:focus {
 
 .framed h5 {
 	margin-bottom: 10px;
+	font-family: "Audiowide", sans-serif;
+}
+
+#user_id{
+    font-family: "Poppins", sans-serif;
 }
 
 .agileits_reply textarea {
 	width: 100%;
 	padding: 10px;
-	border: 1px solid #959cbb;
-	background: var(--darker);
+	/*border: 1px solid #959cbb;
+	background: var(--darker);*/
 	margin-bottom: 15px;
 	height: 150px;
 	resize: none;
@@ -2914,8 +2919,8 @@ select:focus {
 .ltpwrls_search input[type="text"] {
 	outline: none;
 	padding: 10px;
-	background: #f5f5f5;
-	border: 1px solid #E1E1E1;
+	background: var(--white);
+	border: 1px solid var(--main-text);
 	color: #212121;
 	font-size: 14px;
 	width: 80%;
@@ -2998,13 +3003,13 @@ select:focus {
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
-	text-shadow: 0 0 10px var(--primary);
+	/*text-shadow: 0 0 10px var(--primary);*/
 	padding: 50px 30px;
 	margin-top: calc(50% - 115px);
 }
 
 .extraCard h3 {
-	color: var(--secondary) !important;
+	color: var(--main-text) !important;
 }
 
 .extraCard h2 {
@@ -3223,13 +3228,15 @@ li>a {
 }
 
 .game .wthree_blog_left ul a {
-	color: var(--high_inactive);
+	color: var(--main-text);
 	margin: 0 10px 0 0;
 }
 
 .game_list {
 	text-align: center;
+	background: var(--darker);
 	border: 2px solid rgba(0, 0, 0, 0.2);
+	border-radius: 20px;
 }
 
 .pagination>li>a,
@@ -3329,6 +3336,7 @@ li>a {
 }
 
 .accordion label {
+	font-family: "Audiowide", sans-serif;
 	margin-left: 40px;
 	position: relative;
 	border-radius: 10px;
@@ -3355,7 +3363,7 @@ li>a {
 .accordion [type=checkbox]~label::before {
 	position: absolute;
 	content: "-";
-	color: var(--secondary);
+	color: var(--primary);
 	font-size: 28px;
 	font-weight: 300;
 	margin-right: 12px;
@@ -3367,7 +3375,7 @@ li>a {
 .accordion ul li label:hover,
 .accordion [type=radio]:checked~label,
 .accordion [type=checkbox]:checked~label {
-	color: var(--secondary);
+	color: var(--main-text);
 }
 
 .accordion [type=radio]:checked~label::before,
@@ -5544,8 +5552,8 @@ div#container {
 
 .form-control:focus {
 	border-color: var(--highlight);
-	-webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #bbfe0393;
-	box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075), 0 0 8px #bbfe0393;
+	-webkit-box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
+	box-shadow: 0 4px 15px 0 rgba(65, 132, 234, 0.75);
 }
 
 .btn-primary {
@@ -5640,7 +5648,7 @@ fieldset[disabled] .btn-primary.focus {
 /*paysafe.css & safecharge.css*/
 
 #cardName::placeholder {
-	color: #959cbb !important;
+	color: var(--main-text) !important;
 }
 
 ::placeholder {
@@ -5648,9 +5656,22 @@ fieldset[disabled] .btn-primary.focus {
 }
 
 form .input {
-	border: 1px solid #959cbb !important;
+	border: 1px solid var(--main-text) !important;
 }
 
 input#cardName {
+	color: var(--main-text) !important;
+}
+
+.cardForm label{
+	color: var(--main-text) !important;
+}
+
+form.cardForm .input{
+	color: var(--main-text) !important;
+	background: var(--white) !important;
+}
+
+.wordline_sub{
 	color: var(--main-text) !important;
 }
