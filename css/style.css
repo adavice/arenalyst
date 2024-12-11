@@ -14,7 +14,7 @@
 	--high_grad: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
 	--medium_grad: linear-gradient(45deg, var(--secondary), #091555);
 	--ambient_grad: linear-gradient(to bottom, var(--secondary), var(--darker));
-	color-scheme: dark only;
+	/*color-scheme: dark only;*/
 }
 
 body {
@@ -61,6 +61,12 @@ a[href^=tel] {
 
 .shadow {
 	/*filter: drop-shadow(2px 2px 5px var(--primary));*/
+}
+
+#figure1,
+#figure2,
+#figure3 {
+	display: none;
 }
 
 #figure1 {
@@ -336,7 +342,7 @@ h3 {
 .nav>li>a:focus,
 .nav>li.active>a {
 	background-color: transparent;
-	color: var(--white);
+	color: var(--high_inactive);
 	padding: 8px 15px;
 }
 
@@ -360,6 +366,7 @@ h3 {
 #about h2 {
 	text-align: center;
 }
+
 
 .navbar {
 	margin-bottom: 0;
@@ -404,15 +411,15 @@ h3 {
 
 #sub_menu>li:last-child:hover {
 	background: var(--high_inactive);
-	color: var(--primary);
+	color: var(--high_inactive);
 }
 
 #sub_menu>li:last-child a:hover {
-	color: var(--primary);
+	color: var(--high_inactive);
 }
 
 #sub_menu>li:last-child a:visited {
-	color: var(--primary);
+	color: var(--white);
 }
 
 #sub_menu>li {
@@ -423,12 +430,12 @@ h3 {
 
 #sub_menu>li:hover {
 	background: none;
-	color: var(--highlight);
+	color: var(--high_inactive);
 	margin-left: 10px;
 }
 
 #sub_menu>li a:hover {
-	color: var(--highlight);
+	color: var(--high_inactive);
 }
 
 /*#sub_menu > li a:hover{*/
@@ -510,9 +517,9 @@ h3 {
 }
 
 .navbar-header img {
-    width: 220px;
-    margin-top: 26px;
-    margin-bottom: 26px;
+	width: 220px;
+	margin-top: 26px;
+	margin-bottom: 26px;
 }
 
 .navbar-nav>li {
@@ -522,14 +529,13 @@ h3 {
 
 .navbar-default .navbar-nav>li>a:hover,
 .navbar-default .navbar-nav>li>a:focus {
-	color: #FFF;
+	color: var(--high_inactive);
 }
 
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-	color: var(--secondary);
-
+	color: var(--high_inactive);
 	background-color: transparent;
 }
 
@@ -2445,7 +2451,7 @@ form .form-hint b {
 }
 
 .navbar:hover #navbar>ul>li>a {
-	color: #fff;
+	color: var(--high_inactive);
 	text-shadow: 0 0 10px #000;
 }
 
@@ -2968,6 +2974,8 @@ select:focus {
 	align-items: center;
 	justify-content: center;
 	flex-direction: row;
+	background: var(--darker);
+	border-radius: 50px;
 }
 
 .payment_large img {
@@ -2975,6 +2983,10 @@ select:focus {
 	width: auto;
 	margin: 20px;
 	filter: drop-shadow(2px 4px 5px #0004);
+}
+
+.payment_large img:first-of-type {
+	display: none;
 }
 
 .extraCard {
@@ -3684,7 +3696,7 @@ textarea#message {
 	max-width: calc(100% - 30px);
 }
 
-#contact_phone{
+#contact_phone {
 	display: none;
 }
 
