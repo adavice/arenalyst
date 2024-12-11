@@ -214,6 +214,10 @@ input[type="submit"] {
 	background-size: 300% 100%;
 }
 
+input[type="checkbox"]::placeholder {
+	color: var(--white) !important;
+}
+
 h1,
 h2,
 h3,
@@ -916,6 +920,10 @@ form label {
 	max-width: 480px;
 	display: block;
 	position: relative;
+}
+
+form label.check {
+	color: var(--main-text) !important;
 }
 
 form label input {
