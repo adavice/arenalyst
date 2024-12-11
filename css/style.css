@@ -164,6 +164,7 @@ a[href^=tel] {
 
 #warning a {
 	color: var(--white);
+	text-decoration: underline;
 }
 
 #warning svg {
@@ -909,7 +910,7 @@ form .btn-secondary {
 form label {
 	/*font-family: 'Arial', sans-serif;*/
 	font-weight: 400;
-	color: var(--main-text) !important;
+	color: var(--white) !important;
 	margin-bottom: 10px;
 	font-size: 12px;
 	max-width: 480px;
@@ -925,7 +926,7 @@ form label input {
 }
 
 form p {
-	color: #fff;
+	color: var(--white) !important;
 	text-align: center;
 	margin-bottom: 30px;
 }
@@ -1517,6 +1518,9 @@ input::-webkit-inner-spin-button {
 	width: 100%;
 	max-width: 315px;
 	padding: 0;
+	color: var(--white);
+	background: var(--highlight);
+	background-size: 300% 100%;
 }
 
 .contact_page .login_page .contact-right-ltpwr {
@@ -1591,7 +1595,7 @@ input::-webkit-inner-spin-button {
 
 .contact-agileinfo .container.thin {
 	max-width: 720px;
-	filter: drop-shadow(2px 2px 5px var(--primary));
+	/*filter: drop-shadow(2px 2px 5px var(--primary));*/
 }
 
 .thx .contact-agileinfo {
@@ -5510,8 +5514,8 @@ div#container {
 
 /*bootsatrap.css*/
 .form-control {
-	color: #959cbb;
-	background-color: transparent;
+	color: var(--main-text);
+	background-color: var(--white);
 	border: 1px solid #959cbb;
 	border-radius: 8px;
 }
