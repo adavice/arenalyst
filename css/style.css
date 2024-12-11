@@ -649,8 +649,8 @@ h3 {
 }
 
 .hero_genres a:hover {
-	background: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
-	color: var(--primary);
+	background-position: 100% 0;
+	color: var(--white);
 }
 
 /*-- Banner-Slider --*/
